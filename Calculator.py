@@ -38,7 +38,7 @@ while True:
 
     # take input from the user
 
-    choice = input("Enter choice(1/2/3/4): ")
+    choice = input("Enter choice(1,2,3,4) for performing any of the above mentioned operations: ")
 
     # check if choice is one of the four options
 
