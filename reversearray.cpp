@@ -1,46 +1,35 @@
-// Iterative C++ program to reverse an array
-#include <bits/stdc++.h>
+#include<iostream>
 using namespace std;
-
-/* Function to reverse arr[] from start to end*/
-void rvereseArray(int arr[], int start, int end)
+main()
 {
-	while (start < end)
+	int i,a[100],b[100],n,j;
+	
+	cout<<"How many Elements You Enter : ";
+	cin>>n;
+	
+	for(i=0; i<n; i++)
 	{
-		int temp = arr[start];
-		arr[start] = arr[end];
-		arr[end] = temp;
-		start++;
-		end--;
+		cout<<"a["<<i<<"] : ";
+		cin>>a[i];
 	}
-}	
-
-/* Utility function to print an array */
-void printArray(int arr[], int size)
-{
-for (int i = 0; i < size; i++)
-cout << arr[i] << " ";
-
-cout << endl;
-}
-
-/* Driver function to test above functions */
-int main()
-{
-	int arr[] = {1, 2, 3, 4, 5, 6};
 	
-	int n = sizeof(arr) / sizeof(arr[0]);
-
-	// To print original array
-	printArray(arr, n);
+//	j = n-1;
 	
-	// Function calling
-	rvereseArray(arr, 0, n-1);
+	for(i=0,j = n-1; i<n,j>=0; i++,j--)
+	{
+		b[j] = a[i];	
+	  //  j--;
+	}
 	
-	cout << "Reversed array is" << endl;
+	cout<<"\nAfter Reverse Array \n";
 	
-	// To print the Reversed array
-	printArray(arr, n);
+	for(i=0; i<n; i++)
+	{
+		a[i] = b[i];
+		cout<<a[i]<<" ";	
+	}
 	
-	return 0;
+	
+	
+	
 }
