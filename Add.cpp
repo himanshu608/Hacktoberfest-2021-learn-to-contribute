@@ -1,18 +1,19 @@
 #include <iostream>
 using namespace std;
 
+int addNumbers(int a, int b){
+    return a+b;
+}
+
 int main()
 {
     int firstNumber, secondNumber, sumOfTwoNumbers;
-    
+
     cout << "Enter two integers: ";
     cin >> firstNumber >> secondNumber;
 
-    // sum of two numbers in stored in variable sumOfTwoNumbers
-    sumOfTwoNumbers = firstNumber + secondNumber;
-
-    // Prints sum 
-    cout << firstNumber << " + " <<  secondNumber << " = " << sumOfTwoNumbers;     
+    // Prints sum
+    cout << firstNumber << " + " <<  secondNumber << " = " << addNumbers(firstNumber, secondNumber);
 
     return 0;
 }
