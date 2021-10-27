@@ -6,8 +6,8 @@ num2 = input('Enter second number: ')
 
 # Add two numbers
 
-sum = float(num1) - float(num2)
+difference = float(num1) - float(num2)
 
-# Display the sum to the user
+# Display the difference to the user
 
-print('The sum of {0} and {1} is {2}'.format(num1, num2, sum))
+print('The difference is: '.format(num1, num2, difference))
