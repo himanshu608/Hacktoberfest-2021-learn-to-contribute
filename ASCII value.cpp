@@ -19,7 +19,7 @@ void main()
 	getch();
 
 }
-
+/*
  Output:
 
  
@@ -27,3 +27,4 @@ void main()
  Enter any character ::: A
 
  The ASCII value of 'A' is ::: 65
+*/
