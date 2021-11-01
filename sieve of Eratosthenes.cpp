@@ -10,7 +10,7 @@ int main(){
         for (i = 0; i <= range; i++)
             idx[i]=true;       
         for(i = 2; i*i <= range; i++){
-            for(int j = 2*i; j <= range; j = j + i)
+            for(int j = 2*i; j <= range; j += i)
                 idx[j]=false;
         }
         for (i = 0; i <= range; i++){
